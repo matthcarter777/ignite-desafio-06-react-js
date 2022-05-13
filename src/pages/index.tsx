@@ -2,6 +2,7 @@ import { Flex } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import { Banner } from '../components/Banner'
 import { Header } from '../components/Header'
+import { Information } from '../components/Information'
 import { TravelTypes } from '../components/TravelTypes'
 
 
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <Header />
       <Banner />
       <TravelTypes />
+      <Information />
     </Flex>
   )
 }
