@@ -6,6 +6,7 @@ export function Logo() {
       src="/images/Logo.png" 
       alt="Logo" 
       w="200"
+      mb="2"
     />
   )
 }

@@ -13,6 +13,7 @@ export function Header() {
       px="6"
       align="center"
       justifyContent="center"
+      p="2"
     >
       <Logo />
     </Flex>
