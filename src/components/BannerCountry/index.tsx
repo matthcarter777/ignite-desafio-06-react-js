@@ -11,10 +11,10 @@ export function BannerCountry() {
       backgroundRepeat="no-repeat"
     >
       <Flex
-        h="100%"
+        h="400px"
         w="100%"
         paddingTop="20rem"
-        paddingLeft="4rem"
+        paddingLeft="7rem"
       >
         <Heading>Europa</Heading>
       </Flex>
