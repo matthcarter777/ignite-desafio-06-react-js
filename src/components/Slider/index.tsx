@@ -1,12 +1,14 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Link as ChakraLink } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 interface SliderData {
+  id: number;
   name: string;
   image: string;
   description: string; 
@@ -47,7 +49,11 @@ export function Slider({ data }: SliderProps) {
                   align="center"
                   gap="4"
                 >
-                  <Heading fontSize="4xl">{ country.name }</Heading>
+                  <Link href={`/country/${country.id}`} passHref>
+                    <ChakraLink>
+                      <Heading fontSize="4xl">{ country.name }</Heading>
+                    </ChakraLink>
+                  </Link>
                   <Text fontWeight="bold" fontSize="1.2rem">{ country.description }</Text>
                 </Flex>
               </Box>

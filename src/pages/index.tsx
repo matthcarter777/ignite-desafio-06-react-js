@@ -10,12 +10,12 @@ import { TravelTypes } from '../components/TravelTypes'
 const Home: NextPage = () => {
   const countrys = {
     data: [
-      { name: "América do Norte", image: "/images/nortamerica.png", description: "O Continente do captalismo."},
-      { name: "América do Sul", image: "/images/southamerica.png", description: "O continente mais jovem."},
-      { name: "Ásia", image: "/images/asia.png", description: "O continente do desenvolvimento"},
-      { name: "África", image: "/images/africa.png", description: "O continent das tradições"},
-      { name: "Europa", image: "/images/europe.png", description: "O continente mais antigo."},
-      { name: "Oceania", image: "/images/oceania.png", description: "O continente mais bonito."},
+      { id: 1 , name: "América do Norte", image: "/images/europe.png", description: "O Continente do captalismo."},
+      { id: 2 , name: "América do Sul", image: "/images/europe.png", description: "O continente mais jovem."},
+      { id: 3 , name: "Ásia", image: "/images/europe.png", description: "O continente do desenvolvimento"},
+      { id: 4 , name: "África", image: "/images/europe.png", description: "O continent das tradições"},
+      { id: 5 , name: "Europa", image: "/images/europe.png", description: "O continente mais antigo."},
+      { id: 6 , name: "Oceania", image: "/images/europe.png", description: "O continente mais bonito."},
     ],
   }
 
