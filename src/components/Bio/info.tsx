@@ -3,7 +3,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 export function Info() {
   return (
     <Flex
-      p="20"
+      p={["5", "20"]}
       justifyContent="center"
       align="center"
       gap="4rem"

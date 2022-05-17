@@ -27,13 +27,14 @@ export default function Country() {
       <Flex
         direction="column"
         w="100%"
-        paddingRight="7.5rem"
-        paddingLeft="7.5rem"
+        paddingRight={["3", "7.5rem"]}
+        paddingLeft={["3", "7.5rem"]}
         paddingBottom="4rem"
         gap="2rem"
+        align={["center", "normal"]}
       >
         <Heading color="gray.600">Cidades + 100</Heading>
-        <SimpleGrid columns={4} spacing={4}>
+        <SimpleGrid columns={4} spacing={4} minChildWidth="320px">
           { contryData.data.map(data => (
             <CountryCard key={data.country} data={data}/>
           ))}

@@ -11,12 +11,14 @@ export function BannerCountry() {
       backgroundRepeat="no-repeat"
     >
       <Flex
-        h="400px"
+        h="100%"
         w="100%"
+        justify={["center", "flex-start"]}
         paddingTop="20rem"
-        paddingLeft="7rem"
+        paddingLeft="4rem"
+        paddingBottom="5rem"
       >
-        <Heading>Europa</Heading>
+        <Heading fontSize={["4xl", "4xl"]}>Europa</Heading>
       </Flex>
     </Box>
   )

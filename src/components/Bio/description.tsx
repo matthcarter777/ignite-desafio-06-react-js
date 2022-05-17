@@ -3,7 +3,7 @@ import { Flex, Text } from "@chakra-ui/react";
 export function Description() {
   return (
     <Flex
-      p="20"
+      p={["0", "20"]}
     >
       <Text
         color="gray.600"

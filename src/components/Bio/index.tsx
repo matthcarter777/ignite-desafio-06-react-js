@@ -6,9 +6,9 @@ export function Bio() {
   return (
     <Flex
       w="100%"
-      p="10"
+      p={["6", "10"]}
     >
-      <SimpleGrid columns={2}>
+      <SimpleGrid columns={2} minChildWidth={'320px'}>
         <Description />
         <Info />
       </SimpleGrid>

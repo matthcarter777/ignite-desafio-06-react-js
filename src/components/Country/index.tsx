@@ -18,6 +18,7 @@ export function CountryCard({ data }: CountryCardProps) {
       border="1px solid"
       borderColor="#FFBA08"
       borderRadius="5px"
+      w="15rem"
     >
       <Flex>
         <Image src={data.image} alt={data.city}/>
