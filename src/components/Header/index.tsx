@@ -8,8 +8,6 @@ import { Logo } from './logo';
 export function Header() {
   const { asPath } = useRouter();
 
-  console.log(asPath);
-
   return (
     <Flex
       w="100%"

@@ -19,7 +19,7 @@ interface SliderProps {
 export function Slider({ data }: SliderProps) {
   return (
     <Flex
-      p="20"
+      p={["0", "20"]}
     >
       <Swiper
         modules={[Navigation, Pagination, A11y]}

@@ -19,7 +19,7 @@ export function Information() {
         >
           <Divider orientation='horizontal' />
         </Box>
-        <Heading fontSize="4xl" color="gray.600" align="center">
+        <Heading fontSize={["2xl", "4xl"]} color="gray.600" align="center">
           Vamos Nessa? <br/>
           Então Escolha seu Continente
         </Heading>
