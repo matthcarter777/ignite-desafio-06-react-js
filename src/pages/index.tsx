@@ -8,6 +8,17 @@ import { TravelTypes } from '../components/TravelTypes'
 
 
 const Home: NextPage = () => {
+  const countrys = {
+    data: [
+      { name: "América do Norte", image: "/images/nortamerica.png", description: "O Continente do captalismo."},
+      { name: "América do Sul", image: "/images/southamerica.png", description: "O continente mais jovem."},
+      { name: "Ásia", image: "/images/asia.png", description: "O continente do desenvolvimento"},
+      { name: "África", image: "/images/africa.png", description: "O continent das tradições"},
+      { name: "Europa", image: "/images/europe.png", description: "O continente mais antigo."},
+      { name: "Oceania", image: "/images/oceania.png", description: "O continente mais bonito."},
+    ],
+  }
+
   return (
     <Flex
       direction="column"
@@ -17,7 +28,7 @@ const Home: NextPage = () => {
       <Banner />
       <TravelTypes />
       <Information />
-      <Slider />
+      <Slider data={countrys.data} />
     </Flex>
   )
 }

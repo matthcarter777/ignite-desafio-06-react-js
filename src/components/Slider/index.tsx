@@ -6,7 +6,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export function Slider() {
+interface SliderData {
+  name: string;
+  image: string;
+  description: string; 
+}
+
+interface SliderProps {
+  data: SliderData[];
+}
+
+export function Slider({ data }: SliderProps) {
   return (
     <Flex
       p="20"
@@ -20,30 +30,29 @@ export function Slider() {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
-        <SwiperSlide>
-          <Box 
-            w="100%"
-            h="80"
-            backgroundImage="url('/images/europe.png')"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-          >
-            <Flex
-              w="100%"
-              h="100%"
-              direction="column"
-              justifyContent="center"
-              align="center"
-              gap="4"
-            >
-              <Heading fontSize="4xl">Europa</Heading>
-              <Text fontWeight="bold" fontSize="1.2rem">O continente mais antigo.</Text>
-            </Flex>
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        { data.map(country => (
+          <SwiperSlide key={country.name}>
+              <Box 
+                w="100%"
+                h="80"
+                backgroundImage={`url(${country.image})`}
+                backgroundPosition="center"
+                backgroundRepeat="no-repeat"
+              >
+                <Flex
+                  w="100%"
+                  h="100%"
+                  direction="column"
+                  justifyContent="center"
+                  align="center"
+                  gap="4"
+                >
+                  <Heading fontSize="4xl">{ country.name }</Heading>
+                  <Text fontWeight="bold" fontSize="1.2rem">{ country.description }</Text>
+                </Flex>
+              </Box>
+            </SwiperSlide>
+        )) }
       </Swiper>
     </Flex>
   )
